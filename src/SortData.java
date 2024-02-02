@@ -185,7 +185,8 @@ public class SortData {
         }
         catch (IOException exception)
         {
-            System.err.println(exception.getMessage());
+            System.err.println(exception.getMessage() + " выполнение программы будет завершено!");
+            System.exit(1);
         }
         finally {
             closeReaders(fileReaders, bufferedReaders);
